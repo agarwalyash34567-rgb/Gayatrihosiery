@@ -1,0 +1,6 @@
+{
+  "name": "Gayatri Hosiery",
+  "description": "Heritage Comfort since 1920. Explore our curated selection of premium hosiery essentials, innerwear, and loungewear crafted with centuries of textile expertise and modern comfort technology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

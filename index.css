@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@theme {
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-primary: #000613;
+  --color-secondary: #735c00;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #bfa030;
+  --color-navy: #001f3f;
+  
+  --color-surface: #fff8f5;
+  --color-surface-dim: #e1d8d4;
+  --color-surface-bright: #fff8f5;
+  
+  --color-surface-container: #f5ece7;
+  --color-surface-container-low: #fbf2ed;
+  --color-surface-container-high: #efe6e2;
+  --color-surface-container-highest: #e9e1dc;
+  
+  --color-on-surface: #1e1b18;
+  --color-on-surface-variant: #43474e;
+  --color-outline-variant: #c4c6cf;
+  
+  --spacing-container-max: 1280px;
+  --spacing-section-gap: 120px;
+  --spacing-margin-mobile: 20px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+}
+
+/* Custom Utilities */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.text-gold { color: #D4AF37; }
+.bg-gold { background-color: #D4AF37; }
+.border-gold { border-color: #D4AF37; }
+.text-navy { color: #001F3F; }
+.bg-navy { background-color: #001F3F; }
+
+.hero-blur-overlay {
+  backdrop-filter: blur(4px);
+  background: linear-gradient(to right, rgba(255, 248, 245, 0.95) 30%, rgba(255, 248, 245, 0) 100%);
+}
+
+.watermark-pattern {
+  opacity: 0.025;
+  pointer-events: none;
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChs7vOUX5eUxymG6DhTYrV23E9oXSjLk3h3nQtJ7SKXyG73bYrJSKN7UNrXdfj_aVq89Nr1Kc8AGOAlzyvNM0xAQ301JlARxdeSQfpDuRTDCS971FsvHkSyyaYvM78MnW5Lu3tSUdgfudbN9NfHUYJWspZABSKfH7rJNugCSkjXzRvHDAPYkvjH5NJS540w47fByDVMzc1XKE2_kaEc9mMDAJJijYOGaV0PioFlUmILsyiksTXRP9xi-7PkeTCVzddpys_xiob6NE');
+  background-repeat: repeat;
+  background-size: 180px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f5ece7;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #001f3f;
+  border-radius: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
